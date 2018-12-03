@@ -1,3 +1,106 @@
-.piece4 .element_top{
-background-color: black
+.cube {
+  font-size: 4em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: rotateX(-35deg) rotateY(135deg);
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  text-align: center;
+}
+/* Cube 1 */
+.front {
+  transform: translateZ(1em);
+  background-color: red;
+}
+.top {
+  transform: rotateX(90deg) translateZ(1em);
+  background-color: yellow;
+}
+.right {
+  transform: rotateY(90deg) translateZ(1em);
+  background-color: green;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(1em); 
+  background-color: blue;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(1em); 
+  background-color: white;
+}
+.back {
+  transform: rotateY(-180deg) translateZ(1em); 
+  background-color: orange;
+}
+
+/* Cube 1 */
+.cube .piece1 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateX(-1.5cm);
+}
+
+/* Cube 2 */
+.cube .piece2 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(3.4cm) translateX(1.9cm);
+}
+
+/* Cube 3 */
+.cube .piece3 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(0cm) translateX(1.9cm);
+}
+
+.cube .piece4 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(3.4cm) translateX(-1.5cm);
+}
+
+.cube .piece5 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateY(3.4cm) translateX(-1.5cm);
+}
+
+.cube .piece6 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateY(3.4cm) translateX(1.9cm);
+}
+
+.cube .piece7 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateY(3.4cm) translateX(-1.5cm) translateZ(3.4cm);
+}
+.cube .piece8 {
+  font-size: 1em;
+  width: 20%; 
+  margin: 20% 20% 20% 40%;
+  transform-style: preserve-3d;
+  transform: translateY(3.4cm) translateX(1.9cm) translateZ(3.4cm);
 }
