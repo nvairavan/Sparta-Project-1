@@ -1,9 +1,17 @@
+body{
+background-color: grey;
+}
+
+#btn{
+  display: flex;
+  align-items: flex-end;
+}
+
 .cube {
-  font-size: 4em;
-  width: 20%; 
-  margin: 20% 20% 20% 40%;
+  margin: 20% 20% 20% 20%;
   transform-style: preserve-3d;
   transform: rotateX(-35deg) rotateY(135deg);
+  font-size: 400%;
 }
 
 .side {
@@ -13,7 +21,7 @@
   border: 1px solid black;
   text-align: center;
 }
-/* Cube 1 */
+
 .front {
   transform: translateZ(1em);
   background-color: red;
@@ -104,3 +112,32 @@
   transform-style: preserve-3d;
   transform: translateY(3.4cm) translateX(1.9cm) translateZ(3.4cm);
 }
+
+#radio-front:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(-135deg) rotateY(90deg);
+}
+#radio-back:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(45deg) rotateY(90deg);
+} 
+#radio-top:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(-45deg) rotateY(90deg);
+}  
+#radio-bottom:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(-225deg) rotateY(90deg);
+}
+
+#radio-reset:checked ~ .element .cube {
+ transform: rotateX(-35deg) rotateY(135deg);
+}
+
+
+#radio-right:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(-135deg) rotateY(90deg);
+}
+
+
+#radio-left:checked ~ .element .cube {
+  transform: rotate3d(45deg);
+} 
+
+

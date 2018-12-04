@@ -7,12 +7,21 @@
   <title>Rubik's Cube</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
 </head>
 
 <body>
-  <div class="element">
-    <div class="cube">
+
+  <input type="radio" id="radio-front" name="select-face">Red</input>
+  <input type="radio" id="radio-back" name="select-face">Orange</input>
+  <input type="radio" id="radio-left" name="select-face">Blue</input>
+  <input type="radio" id="radio-right" name="select-face">Green</input>
+  <input type="radio" id="radio-top" name="select-face">Yellow</input>
+  <input type="radio" id="radio-bottom" name="select-face">White</input>
+  <input type="radio" id="radio-reset" name="select-face">Reset</input>
+  <br>
+
+  <div class="element" id="element" draggable="true">
+    <div class="cube" id="cube">
       <div class="piece1">
         <div class="side front"></div>
         <div class="side back"></div>
@@ -79,6 +88,23 @@
       </div>
     </div>
   </div>
+  <div id="btn">
+    <button id="top" onclick="rotateLeft()">Top</button>
+    <button id="bottom">Bottom</button>
+    <button id="left">Left</button>
+    <button id="right">Right</button>
+    <button id="front">Front</button>
+    <button id="back">Back</button>
+  </div>
+
+  <button onclick="rotX()">X</button>
+  <button onclick="rotY()">Y</button>
+  <button onclick="rotZ()">Z</button>
+  <button onclick="reset()">reset</button>
+
+  <p id="demo"></p>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
