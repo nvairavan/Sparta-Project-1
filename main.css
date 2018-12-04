@@ -10,8 +10,10 @@ background-color: grey;
 .cube {
   margin: 20% 20% 20% 20%;
   transform-style: preserve-3d;
-  transform: rotateX(-35deg) rotateY(135deg);
+  /* transform: rotateX(-35deg) rotateY(135deg); */
   font-size: 400%;
+  transform: rotate3d(1, 1, 0, -90deg); 
+  transition: all 250ms;
 }
 
 .side {
@@ -125,19 +127,12 @@ background-color: grey;
 #radio-bottom:checked ~ .element .cube {
   transform: rotateX(-115deg) rotateZ(-225deg) rotateY(90deg);
 }
-
+#radio-right:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(45deg) rotateY(180deg);
+}
+#radio-left:checked ~ .element .cube {
+  transform: rotateX(-115deg) rotateZ(-135deg) rotateY(180deg);
+} 
 #radio-reset:checked ~ .element .cube {
  transform: rotateX(-35deg) rotateY(135deg);
 }
-
-
-#radio-right:checked ~ .element .cube {
-  transform: rotateX(-115deg) rotateZ(-135deg) rotateY(90deg);
-}
-
-
-#radio-left:checked ~ .element .cube {
-  transform: rotate3d(45deg);
-} 
-
-
